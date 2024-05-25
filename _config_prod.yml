@@ -22,6 +22,8 @@ title: This Is Not A Drill! Blog
 email: willkessler@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Latest news and tutorials from the This Is Not A Drill! User Alerting Service
+url: "https://willkessler.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/this-is-not-a-drill-blog" # the subpath of your site, e.g. /blog
 twitter_username: atlas3650
 github_username:  willkessler
 
