@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="posts" style="background-color: lightblue;">
+  {% for post in site.posts %}
+  <div class="post" style="border: 2px solid red; padding: 10px;">
+    <a href="{{ post.url | relative_url }}">
+      <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="width: 100%;">
+      <h2>{{ post.title }}</h2>
+    </a>
+    <p>{{ post.excerpt }}</p>
+  </div>
+  {% endfor %}
+</div>

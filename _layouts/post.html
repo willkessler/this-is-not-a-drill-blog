@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="post-content">
+  <header>
+    <img src="{{ page.main_image | relative_url }}" alt="{{ page.title }}">
+    <h1>{{ page.title }}</h1>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+  </header>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <hr>
+  <h2>In Other News</h2>
+  <div class="related-posts">
+    {% for post in site.posts limit:3 %}
+    <div class="related-post">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
+        <h3>{{ post.title }}</h3>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</article>

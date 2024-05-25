@@ -3,6 +3,10 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2024-05-24 15:44:38 -0700
 categories: jekyll update
+thumbnail: "/assets/images/ThisIsNotADrill_cutout.png"
+main_image: "/assets/images/ThisIsNotADrill_cutout.png"
+categories: [category1, category2]
+tags: [tag1, tag2]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

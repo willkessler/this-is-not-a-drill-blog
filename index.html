@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <a href="{{ post.url }}">
+      <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+      <h2>{{ post.title }}</h2>
+    </a>
+    <p>{{ post.excerpt }}</p>
+  </div>
+  {% endfor %}
+</div>
